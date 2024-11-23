@@ -12,13 +12,13 @@ public class DadosSerie {
     private String avaliacao;
 
     @JsonAlias("totalSeasons")
-    private int totalDeTemporadas;
+    private Integer totalDeTemporadas;
 	
 	public DadosSerie() {
         // Construtor padrão necessário
     }
 
-	public DadosSerie(String titulo, String avaliacao, int totalDeTemporadas) {
+	public DadosSerie(String titulo, String avaliacao, Integer totalDeTemporadas) {
         this.titulo = titulo;
         this.avaliacao = avaliacao;
         this.totalDeTemporadas = totalDeTemporadas;
@@ -40,17 +40,17 @@ public class DadosSerie {
 		this.avaliacao = avaliacao;
 	}
 
-	public int getTotalDeTemporadas() {
+	public Integer getTotalDeTemporadas() {
 		return totalDeTemporadas;
 	}
 
-	public void setTotalDeTemporadas(int totalDeTemporadas) {
+	public void setTotalDeTemporadas(Integer totalDeTemporadas) {
 		this.totalDeTemporadas = totalDeTemporadas;
 	}
 	
 	@Override
 	public String toString() {
-	    return "Dados da Serie {" +
+	    return "Dados da Serie: {" +
 	            "titulo = '" + titulo + '\'' +
 	            ", avaliacao = '" + avaliacao + '\'' +
 	            ", totalDeTemporadas = " + totalDeTemporadas +
